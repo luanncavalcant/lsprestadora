@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+:root{
+    --branco: #F2F2F2;
+    --cinza: #BFBFBF;
+    --cinza-escuro: #8C8C8C;
+    --preto-mais-claro: #262626;
+    --preto: #0D0D0D;
+    --hover-background-nav:#8c8c8c36;
+}
+
+.header-detalhes{
+    background-color: var(--preto-mais-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 20px 0px 27px 0px;
+}
+.logo{
+    margin: 0px 5%;
+    font-family: 'Barlow', sans-serif;
+    color: var(--branco);
+    font-weight: 400;
+}
+/*MENU*/
+.nav-detalhes{
+    align-items: center;
+    margin-right: 10%;
+}
+.nav-detalhes ul li{
+    position: relative;
+    display: inline;
+    padding: 15px;
+}
+.nav-detalhes ul li>a{
+    color: var(--branco);
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+}
+
+li:hover{
+    background-color:var(--hover-background-nav);
+    border-radius: 5%;
+    }
+ 
+/*SUB-MENU*/
+li ul{
+    display: none;
+    padding-top:28px;
+    min-width: 14rem;
+    position:absolute;
+    left: 0px;
+}
+li ul li{
+    width: 100%;
+}
+
+li:hover ul{
+    display: block;
+}
+
+
+.section-principal-detalhes {
+    width: 80%;
+    margin: 5% 10%;
+    display: flex;
+    gap: 110px;
+}
+
+.img-carpinteiro{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+.section-informacoes{
+    position: relative;
+    width: 50%;
+    background-color: var(--branco);
+}
+.section-informacoes h1{
+    width: 100%;
+    text-align: start;
+    font-size: 23px;
+    margin: 1% 3%;
+}
+.section-informacoes p{
+    color: var(--preto-mais-claro);
+    text-align: start;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+.button-contratar-servico{
+    background-color:  rgb(79, 128, 4);
+    color: var(--branco);
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin: 10px 25%;
+    bottom: 20px;
+    padding: 4px;
+    border: 1px solid var(--preto-mais-claro);
+    font-size: 13px;
+}
+.button-contratar-servico:hover{
+    background-color:  rgb(71, 113, 8);
+    
+}
+
+.star-avaliacao-section-informacoes{
+    margin:1% 3%;
+}
+.checked {
+    color: orange;
+  }
+.localizao-section-informacoes{
+    color:var(--cinza-escuro);
+    margin: 1% 3%;
+}

@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+:root{
+    --branco: #F2F2F2;
+    --cinza: #BFBFBF;
+    --cinza-escuro: #8C8C8C;
+    --preto-mais-claro: #262626;
+    --preto: #0D0D0D;
+    --hover-background-nav:#8c8c8c36;
+}
+
+.header-index{
+    background-color: var(--preto-mais-claro);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    padding: 20px 0px 27px 0px;
+}
+
+.logo{
+    margin: 0px 5%;
+    font-family: 'Barlow', sans-serif;
+    color: var(--branco);
+    font-weight: 400;
+}
+.nav-index{
+    align-items: center;
+    margin-right: 10%;
+}
+.nav-index ul li{
+    position: relative;
+    display: inline;
+    padding: 15px;
+}
+.nav-index ul li a{
+    color: var(--branco);
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase
+}
+li:hover{
+    background-color:var(--hover-background-nav);
+    border-radius: 5%;
+}
+
+.section-imagem-lagura-100-index{
+    padding: 0px;
+}
+.img-width-100{
+    margin-top:10%;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/*SUB-MENU DO INDEX*/
+li ul{
+    display: none;
+    padding-top:28px;
+    min-width: 14rem;
+    position:absolute;
+    left: 0px;
+}
+
+li ul li{
+    width:100% ;
+}
+  
+li:hover ul{
+    display: block;
+}
+
+.main-index{
+    width: 100%;
+}
+
+.section_principal{
+    background-color: var(--branco);
+    width: 80%;
+    padding-top: 3%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+.section-secundaria{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+section h1{
+    width:100%;
+}
+
+article{
+    
+    padding:30px;
+    justify-content: center;
+}
+
+section img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.footer-index{
+    background-color: var(--preto-mais-claro);
+    color: var(--branco);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+/*RESPONSIVIDADE DO INDEX*/
+@media(max-width:990px){
+    .header-index{
+        flex-direction: column ;
+        padding-top: 32px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 65px;
+        
+    }
+    .nav-index{
+        padding-right: 0px;
+        margin-right: 0%;
+    }
+    
+    .main-index{
+        padding-top:40px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+}
+
+
+/*PAGINA CADASTRO EMPRESA*/
+.header-cadastro-empresa{
+    background-color: var(--preto-mais-claro);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: 90px;
+    top: 0px;
+    padding: 20px 0px 27px 0px;
+}
+
+.nav-cadastro-empresa{
+    align-items: center;
+    margin-right: 10%;
+}
+.nav-cadastro-empresa ul li{
+    position: relative;
+    display: inline;
+    padding: 15px;
+}
+.nav-cadastro-empresa ul li> a{
+    color: var(--branco);
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+}
+li:hover{
+    background-color:var(--hover-background-nav);
+    border-radius: 5%;
+}
+.section-form-cadastro{
+    position: absolute;
+    width: 50%;
+    right: 25%;
+    top: 25%;
+}
+.section-form-cadastro legend{
+    font-size: 20px;
+    padding: 5px 5px;
+}
+.main-cadastro-empresa form{
+    background-color: var(--branco);
+    font-family: 'Barlow', sans-serif;
+}
+.div-form-cadstro-empresa{
+    padding: 5px;
+}
+.section-form-cadastro label{
+    font-size: 17px;
+}
+.input-empresa{
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 0%;
+    font-family: 'Barlow', sans-serif;
+}
+.main-cadastro-empresa button{
+    margin: 3px;
+    padding: 5px;
+    background-color: var(--preto-mais-claro);
+    color: white;
+    border: none;
+}
+.main-cadastro-empresa button:hover{
+    background-color: var(--preto);
+}
+.footer-cadastro-empresa{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: var(--preto-mais-claro);
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*RESPONSIVIDADE DA PAGINA DO CADASTRO DA EMPRESA*/
+@media(max-width:680px){
+    .header-cadastro-empresa{
+        flex-direction: column ;
+        padding-top: 16px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 65px;
+        
+    }
+    .nav-cadastro-empresa{
+        padding-right: 0px;
+        margin-right: 0%;
+    }
+    .input-empresa{
+        border: 1px solid black;
+        width: 100%;
+        padding: 2px 0%;
+        font-family: 'Barlow', sans-serif;
+    }
+    .section-form-cadastro{
+        position: absolute;
+        margin-top: 14%;
+        width: 60%;
+        right: 20%;
+        top: 20%;
+    }
+    .section-form-cadastro label{
+        font-size: 14px;
+    }
+}
+
+
+
+/*PAGINA DETALHES*/
+.header-detalhes {
+    background-color: var(--preto-mais-claro);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: 90px;
+    top: 0px;
+    padding: 20px 0px 27px 0px;
+}
+
+.nav-detalhes{
+    align-items: center;
+    margin-right: 10%;
+}
+.nav-detalhes ul li{
+    position: relative;
+    display: inline;
+    padding: 15px;
+}
+.nav-detalhes ul li> a{
+    color: var(--branco);
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+}
+.h1-servico-disponiveis{
+    margin-top: 11%;
+    text-align: start;
+    padding-left: 1%;
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.section-table{
+    text-align: center;
+    background-color: var(--branco);
+    margin-top: 1%;
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
+.th-detalhes{
+    background-color: var(--preto-mais-claro);
+    color: white;
+    padding: 5px 0px;
+    border: 1px solid var(--preto-mais-claro);
+}
+.td-detalhes{
+    border: 1px solid var(--preto-mais-claro);
+    padding: 3px 8px;
+}
+.footer-detalhes{
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin-top: 1%;
+    text-align: center;
+    background-color: var(--preto-mais-claro);
+    color: white;
+}
+
+/*RESPONSIVIDADE DA PAGINA DETALHES*/
+@media(max-width:680px){
+    .header-detalhes{
+        flex-direction: column ;
+        padding-bottom: 65px;
+    }
+    .h1-servico-disponiveis{
+        margin-top: 50%;
+        text-align: start;
+        padding-left: 1%;
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .section-table{
+        text-align: center;
+        background-color: var(--branco);
+        margin-top: 1%;
+    }
+    .table{
+        display: block;
+        font-size: 13px;
+    }
+    .th-detalhes{
+        background-color: var(--preto-mais-claro);
+        color: white;
+        border: 1px solid var(--preto-mais-claro);
+    }
+    .td-detalhes{
+        border: 1px solid var(--preto-mais-claro);
+        padding: 0px 0px;
+    }
+    .footer-detalhes{
+        position: absolute;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+        margin-top: 1%;
+        text-align: center;
+        background-color: var(--preto-mais-claro);
+        color: white;
+    }
+    
+}
+
+/*PAGINA CADASTRO SERVIÇO*/
+.header-cadastro-servico{
+    background-color: var(--preto-mais-claro);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: 90px;
+    top: 0px;
+    padding: 20px 0px 27px 0px;
+}
+
+.nav-cadastro-servico{
+    align-items: center;
+    margin-right: 10%;
+}
+.nav-cadastro-servico ul li{
+    position: relative;
+    display: inline;
+    padding: 15px;
+}
+.nav-cadastro-servico ul li> a{
+    color: var(--branco);
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+}
+li:hover{
+    background-color:var(--hover-background-nav);
+    border-radius: 5%;
+}
+.main-servico{
+    position: absolute;
+    width: 50%;
+    right: 25%;
+    top: 25%;
+}
+.main-servico legend{
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+.main-servico form{
+    background-color: var(--branco);
+    border-radius: 1%;
+    font-family: 'Barlow', sans-serif;
+}
+.label-cadastro-servico{
+    font-size: 17px;
+}
+.div-form-cadastro-servico{
+    padding: 8px;
+}
+.main-servico .input-servico{
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 0%;
+    font-family: 'Barlow', sans-serif;
+}
+.main-servico button{
+    margin: 3px;
+    padding: 5px;
+    background-color: var(--preto-mais-claro);
+    color: white;
+    border: none;
+}
+
+.main-servico button:hover{
+    background-color: var(--preto);
+}
+
+.footer-cadastro-servico{
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-color: var(--preto-mais-claro);
+    color: white;
+}
+/*RESPONSIVIDADE DA PAGINA DO CADASTRO DO SERVIÇO*/
+@media(max-width:680px){
+    .header-cadastro-servico{
+        flex-direction: column ;
+        padding-top: 32px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 65px;
+        
+    }
+    .nav-cadastro-servico{
+        padding-right: 0px;
+        margin-right: 0%;
+    }
+    .main-servico legend {
+        font-size: 17px;
+        padding: 5px 5px;
+    }
+    .div-form-cadastro-servico {
+        padding: 3px;
+    }
+    .main-servico .input-servico{
+        border: 1px solid black;
+        width: 100%;
+        padding: 6px 0%;
+        font-family: 'Barlow', sans-serif;
+    }
+    .main-servico{
+        position: absolute;
+        margin-top: 20%;
+        width: 60%;
+        right: 20%;
+        top: 20%;
+    }
+    .label-cadastro-servico{
+        font-size: 12px;
+    }
+    .input-servico{
+        border: 1px solid black;
+        width: 100%;
+        padding: 2px 0%;
+        font-family: 'Barlow', sans-serif;
+    }
+}

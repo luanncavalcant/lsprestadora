@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+
+</head>
+<body page ='cadastro'>
+    <header class="header-cadastro-empresa">
+        <h1 class="logo">Lc prestadora</h1>
+        <nav class="nav-cadastro-empresa">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Admin</a>
+                    <ul>
+                        <li><a href="cadastro-empresa.html">Cadastrar empresa</a></li>
+                    </ul></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="listaRegistros">
+        <table>
+            <tr>
+                <th>CODIGO</th>
+                <th>EMPRESA</th>
+                <th>SERVICO</th>
+                <th>CONTATO</th>
+                <th>EMAIL</th>
+                <th>LOCAL</th>
+                <th></th>
+            </tr>
+            <tbody id="listaEmpresasBody"></tbody>
+        </table>
+    
+        <button onclick="vizualizar('cadastro', true)">Cadastrar</button> 
+    </div>
+
+    
+        <form id="cadastroRegistros">
+            <h1>Cadastre sua empresa</h1>
+            <label>CODIGO</label>
+                <div class="div-input"><input type="number" readonly id="id"></div>
+            <label>EMPRESA</label>
+                <div class="div-input"><input type="txt" placeholder="Nome da Empresa" required  maxlength="15" minlength="2" id="nomeEmpresa"></div>
+            <label>SERVICO</label>
+                <div class="div-input"><input type="text" placeholder="Servico" required maxlength="15" minlength="2" id="servico"></div>
+            <label>CONTATO</label>
+                <div class="div-input"><input type="tel" required placeholder="Contato da empresa" id="contato" maxlength="13" ></div>
+            <label>EMAIL</label>
+                <div class="div-input"><input type="email" required placeholder="Email" id="email"></div>
+            <label>LOCAL</label>
+                <div class="div-input"><input type="text" required placeholder="Cidade da Empresa" id="local" minlength="2" maxlength="20"></div>
+            <div>
+                <button class="button-salvar">Salvar</button>
+                <button onclick="vizualizar('lista')" class="cinza" type="button">Cancelar</button>
+            </div>
+        </form>
+    <footer class="footer-cadastro-empresa">Site criado por Luan Cavalcante</footer>
+</body>
+</html>
